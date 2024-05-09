@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        body: "#F1F0E8",
+        body: "#DDE6ED",
         primary: "#FC4100",
+        footer: "#3652AD",
         glass: "rgba(214, 214, 214, 0.4)",
       },
       fontFamily: {
