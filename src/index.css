@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base {
+  /* Header Styles */
+  .header_element {
+    @apply items-center gap-2 hidden md:flex relative;
+  }
+  .extraBtn {
+    @apply py-1 text-center cursor-pointer;
+  }
+  .effect{
+    @apply h-1 w-full bg-primary rounded-full scale-x-0 transform origin-left hover:scale-x-100 transition-transform duration-300 
+  }
+
+}
