@@ -33,7 +33,7 @@ const Header = () => {
     <header className="bg-glass [backdrop-filter:blur(30px)] rounded-3xl mt-5 px-4 md:px-1 mx-8 py-5 sticky top-2">
       {/* For All header items */}
       <div className="flex justify-between md:justify-evenly md:items-center ">
-        {/* Input element and logo */}
+        {/* Input element, Name and logo */}
         <div className="flex flex-col md:flex-row gap-3 md:items-center items-start">
           <img
             src="logo.jpg"
@@ -41,7 +41,9 @@ const Header = () => {
             onClick={() => navigate("/")}
             className="cursor-pointer w-16 h-16 rounded-full hidden md:block"
           />
-          <h3 className="text-3xl font-Tourney md:hidden text-primary font-extrabold select-none">Daily Spark</h3>
+          <h3 className="text-3xl font-Tourney md:hidden text-primary font-extrabold select-none">
+            Daily Spark
+          </h3>
           {/* Input feild */}
           <div className="relative">
             <input
@@ -67,26 +69,32 @@ const Header = () => {
           <button>Subscribe</button>
           <MdKeyboardArrowDown />
         </div>
+        {/* Mobiqle Menu */}
         <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-3xl"
-          >
-            {!isMenuOpen ? <MdOutlineMenu /> : <RxCross2 />}
+          <button onClick={() => setIsMenuOpen(true)} className="text-3xl">
+            <MdOutlineMenu />
           </button>
           <div
-            className={`top-0 right-0 md:hidden ${
+            className={`fixed left-[-30px] top-0 h-screen  bg-white shadow-sm shadow-gray-500/50 px-10 z-10 ${
               isMenuOpen ? "block" : "hidden"
             }`}
           >
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="text-3xl pl-[80%]"
+            >
+              <RxCross2 />
+            </button>
             {menuItems.map((item) => (
-              <div key={item.id} className="flex gap-2 items-center py-1">
+              <div key={item.id} className="flex gap-2 items-center py-1 my-2">
                 {item.icon}
                 <button>{item.title}</button>
               </div>
             ))}
-            <div className="extraBtn">Signup</div>
-            <div className="extraBtn">Login</div>
+            <div className="outline rounded-2xl px-2 flex py-2 items-center hover:bg-primary hover:text-white ">
+              <button>Subscribe</button>
+              <MdKeyboardArrowDown />
+            </div>
           </div>
         </div>
       </div>

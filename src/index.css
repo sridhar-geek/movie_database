@@ -4,7 +4,11 @@
 
 
 
+
 @layer base {
+    body{
+    @apply bg-body
+  }
   /* Header Styles */
   .header_element {
     @apply items-center gap-2 hidden md:flex relative;
