@@ -11,9 +11,10 @@ export default {
       },
       fontFamily: {
         urbanist: "Urbanist",
-        monoton: ["Monoton"],
         Poppins: "Poppins",
         Tourney: "Tourney",
+        BriemHand: "Briem Hand",
+        Geological: "Geological",
       },
     },
   },
