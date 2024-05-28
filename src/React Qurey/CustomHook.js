@@ -7,7 +7,7 @@ const axiosInstance = axios.create({
   headers: {
     accept: "application/json",
     Authorization:
-    `Bearer ${import.meta.env.VITE_MOVIE_API_KEY}`  },
+    `Bearer ${import.meta.env.VITE_MOVIE}`  },
 });
 
 // Function to call Movies

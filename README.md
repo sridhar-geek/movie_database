@@ -26,4 +26,4 @@ Get your Api key here
 - [The Movie Data Base](https://developer.themoviedb.org/docs/getting-started)
 
 
-To view the Demo of the Project [Click here](www.google.com)
+To view the Demo of the Project [Click here](https://movie-database-zeta-rosy.vercel.app/)
