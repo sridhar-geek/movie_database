@@ -1,8 +1,29 @@
-# React + Vite
+# The Movie Data Base
+![Logo](public/logo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+***It is similar to Movie DataBase website. It shows Popular movies from All around the World is a hotel booking website.***
 
-Currently, two official plugins are available:
+## Tech Stack
+- Reactjs
+- Tailwind Css
+- TanStack Query (React Query)
+- HTML5
+- CSS3
+- JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup/Installition
+Clone the repository using `git clone `
+ and install dependencies using  `npm install` command
+
+Create .env file to Store Movie DateBase API key 
+
+  ```sh
+VITE_MOVIE_API_KEY = your api key 
+```
+
+Get your Api key here
+- [The Movie Data Base](https://developer.themoviedb.org/docs/getting-started)
+
+
+To view the Demo of the Project [Click here](www.google.com)

@@ -1,18 +1,16 @@
 import { BsSearch, BsInfoCircle } from "react-icons/bs";
-import { CgShoppingCart } from "react-icons/cg";
-// import { LuMenuSquare } from "react-icons/lu";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
+import { AiFillHeart } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import { MdKeyboardArrowDown, MdOutlineMenu } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
   const menuItems = [
     {
       id: 1,
-      icon: <CgShoppingCart />,
-      title: "Cart",
+      icon: <AiFillHeart />,
+      title: "Favorites",
     },
     {
       id: 2,
@@ -27,7 +25,6 @@ const Header = () => {
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
   return (
     /* background styles for header */
     <header className="bg-glass [backdrop-filter:blur(30px)] rounded-3xl mt-5 px-4 md:px-1 mx-8 py-5 sticky top-2">
@@ -36,13 +33,12 @@ const Header = () => {
         {/* Input element, Name and logo */}
         <div className="flex flex-col md:flex-row gap-3 md:items-center items-start">
           <img
-            src="logo.jpg"
+            src="logo.png"
             alt="logo"
-            onClick={() => navigate("/")}
             className="cursor-pointer w-16 h-16 rounded-full hidden md:block"
           />
-          <h3 className="text-3xl font-Tourney md:hidden text-primary font-extrabold select-none">
-            Daily Spark
+          <h3 className="text-xl md:text-3xl font-Tourney md:hidden text-primary font-extrabold select-none">
+            The Movie Data Base
           </h3>
           {/* Input feild */}
           <div className="relative">
@@ -50,7 +46,7 @@ const Header = () => {
               type="text"
               name="Creators"
               placeholder="Search here"
-              className="pl-10 pr-4 py-2 w-80 md:w-64 rounded-full justify-self-stretch border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary"
+              className="pl-10 pr-4 py-2 w-70 md:w-64 rounded-full justify-self-stretch border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary"
             />
             <BsSearch className="icon w-5 h-4 absolute top-1/3 left-3 " />
           </div>
@@ -75,7 +71,7 @@ const Header = () => {
             <MdOutlineMenu />
           </button>
           <div
-            className={`fixed left-[-30px] top-0 h-screen  bg-white shadow-sm shadow-gray-500/50 px-10 z-10 ${
+            className={`fixed left-[-30px] top-[-20px] pt-10 h-screen  bg-white shadow-sm shadow-gray-500/50 px-10 z-10 ${
               isMenuOpen ? "block" : "hidden"
             }`}
           >

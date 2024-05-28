@@ -6,13 +6,13 @@ const Footer = () => {
     <footer className="bg-footer pt-10 pb-5 text-body ">
       {/* box 1 */}
       <div className="flex flex-col md:items-center sm:justify-between  mx-5 md:flex-row gap-5">
-        <h3 className="font-Tourney text-3xl cursor-pointer select-none"> Daily Spark</h3>
+        <h3 className="font-Tourney text-3xl cursor-pointer select-none"> The Movie Data Base</h3>
         {/* box 2 */}
         <div>
           <h4 className="footer_items font-extrabold">Important Links</h4>
           <div className="footer_items">About Us</div>
-          <div className="footer_items">International News</div>
-          <div className="footer_items">Trending News</div>
+          <div className="footer_items">Popular Movies</div>
+          <div className="footer_items">Trending Movies</div>
           <div className="footer_items">News Letters</div>
           <div className="footer_items">Terms and Conditions</div>
           <div className="footer_items">Privacy and Policy</div>
@@ -22,7 +22,7 @@ const Footer = () => {
           <h4 className="footer_items font-bold">Contact Us</h4>
           <div className="footer_items flex items-center gap-2">
             {" "}
-            <MdLocationOn /> Delhi, India
+            <MdLocationOn /> Visakhapatnam, India
           </div>
           <div className="footer_items flex items-center gap-2">
             <MdOutlinePhone />
@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       {/* down copyright */}
       <div className="border border-gray-500 border-x-2"></div>
-      <div className="text-center mt-3"> © Daily Spark 2024</div>
+      <div className="text-center mt-3"> © The Movie Data Base 2024</div>
     </footer>
   );
 };
