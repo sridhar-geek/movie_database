@@ -13,7 +13,7 @@
 - JavaScript
 
 ## Setup/Installition
-Clone the repository using `git clone `
+Clone the repository using `git clone https://github.com/sridhar-geek/movie_database.git`
  and install dependencies using  `npm install` command
 
 Create .env file to Store Movie DateBase API key 
